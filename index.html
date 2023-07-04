@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #d8d6d6;
+        }
+
+        .cont {
+            width: 500px;
+            height: 400px;
+            background-color: rgb(247, 244, 244);
+            border-radius: 13px;
+            position: absolute;
+            left: 35%;
+            top: 25%;
+        }
+
+        .cont>h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(33, 32, 32);
+        }
+
+        form>.text_field {
+            position: relative;
+            margin: 10px 0;
+            border-bottom: 2px solid rgb(138, 128, 128);
+        }
+
+        form>.border {
+            border-bottom: 3px solid rgb(204, 197, 197);
+        }
+
+        .text_field>input {
+            width: 100%;
+            padding: 0 10px;
+            height: 60px;
+            font-size: 16px;
+            border: none;
+            background: none;
+        }
+
+        .cont>form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        form>.submit_Section {
+            text-align: center;
+            padding: 30px 0 50px 0;
+            height: 30px;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            background-color: #1e87f0;
+            border: none;
+            border-radius: 5px;
+            color: rgb(240, 237, 237);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cont">
+        <h1>Login</h1>
+
+        <form action="post">
+            <div class="text_field border">
+                <input type="text" placeholder="Username">
+
+            </div>
+            <div class="text_field">
+                <input type="text" placeholder="Password">
+
+            </div>
+            <div class="submit_Section">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
