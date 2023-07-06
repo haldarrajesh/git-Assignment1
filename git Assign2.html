@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(23, 22, 22);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;          
+        }
+
+        .form-box {
+            margin-bottom: 25px;           
+        }
+
+        .form-box > label {
+          display: block;
+           margin-bottom: 5px;
+        }
+
+        .form-box > input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .form-box > select {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .submit > input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .submit > input:hover {
+            background-color: rgb(37, 37, 95);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Signup</h1>
+
+            <form>
+                <div class="form-box">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="batch">Batch:</label>
+                    <select name="cources" id="#">
+                        <option value="sigma 2.0">Sigma 2.0</option>
+                        <option value="web devlopment">Full stack web devlopment</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+
+                <div class="form-box">
+                    <label for="age">Age:</label>
+                    <input type="text" name="age" id="age" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" id="password" required>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="Signup">
+                </div>
+            </form>
+
+        </div>
+</body>
+
+</html>
